@@ -49,7 +49,6 @@ const ALL_ORDERS = gql`
         getAllOrders {
             id
             name
-            number
             price
             createdAt
             location
