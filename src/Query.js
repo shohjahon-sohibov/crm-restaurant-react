@@ -35,6 +35,15 @@ const NEW_RESTAURANTS = gql`
     }
 `
 
+const ALL_BRANCHES = gql`
+    query {
+        getAllBranches {
+            id
+            name
+        }
+    }
+`
+
 const NEW_BRANCH = gql`
     mutation newBranch($name: String! $restaurantId: ID!) {
         newBranch(name: $name restaurantId: $restaurantId) {
@@ -57,11 +66,24 @@ const ALL_ORDERS = gql`
     }
 `
 
+const NEW_MENU = gql`
+    mutation newMenu($name: String! $price: Int! $branchId: ID!) {
+        newMenu(name: $name price: $price branchId: $branchId) {
+            id
+            name
+            price
+            branchId
+        }
+    }
+`
+
 export {
     CATEGORIES,
     NEW_CATEGORY,
     RESTAURANTS,
     NEW_RESTAURANTS,
+    ALL_BRANCHES,
     NEW_BRANCH,
-    ALL_ORDERS
+    ALL_ORDERS,
+    NEW_MENU
 }
