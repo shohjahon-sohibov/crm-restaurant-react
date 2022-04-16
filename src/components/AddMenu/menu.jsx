@@ -1,7 +1,7 @@
 import { useMutation, useQuery } from "@apollo/client";
 import { ALL_BRANCHES, NEW_MENU } from "../../Query";
 
-const Branch = () => {
+const Menu = () => {
   const { data } = useQuery(ALL_BRANCHES);
   const [newMenu] = useMutation(NEW_MENU, {
     update: (_, data) => {
@@ -67,4 +67,4 @@ const Branch = () => {
   );
 };
 
-export default Branch;
+export default Menu;

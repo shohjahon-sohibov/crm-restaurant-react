@@ -2,8 +2,8 @@ import "./App.css";
 import Category from "./components/AddCategory/category";
 import Restaurant from "./components/AddRestaurants/restaurant";
 import Branch from "./components/AddBranches/branch";
-import Order from "./components/ShowOrders/order";
 import Menu from "./components/AddMenu/menu";
+import Order from "./components/ShowOrders/order";
 
 function App() {
   return (
