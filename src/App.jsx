@@ -3,6 +3,7 @@ import Category from "./components/AddCategory/category";
 import Restaurant from "./components/AddRestaurants/restaurant";
 import Branch from "./components/AddBranches/branch";
 import Order from "./components/ShowOrders/order";
+import Menu from "./components/AddMenu/menu";
 
 function App() {
   return (
@@ -17,8 +18,11 @@ function App() {
         <div>
           <Branch />
         </div>
+        <div>
+          <Menu />
+        </div>
       </div>
-        <hr className="border border-dark" />
+      <hr className="border border-dark" />
       <Order />
     </div>
   );
