@@ -1,5 +1,4 @@
 import { useQuery } from "@apollo/client";
-import { useState } from "react";
 import { ALL_ORDERS } from "../../Query";
 
 const Order = () => {
@@ -14,7 +13,6 @@ const Order = () => {
             <tr>
               <th scope="col">#</th>
               <th scope="col">Name</th>
-              <th scope="col">Number</th>
               <th scope="col">Price</th>
               <th scope="col">location</th>
               <th scope="col">OrderedAt</th>
@@ -28,7 +26,6 @@ const Order = () => {
                 <tr key={i}>
                   <td>{e.id}</td>
                   <th scope="row">{e.name}</th>
-                  <td>{e.number}</td>
                   <td>{e.price}</td>
                   <td>{e.location}</td>
                   <td>{e.createdAt}</td>
