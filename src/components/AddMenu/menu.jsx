@@ -16,7 +16,7 @@ const Menu = () => {
     newMenu({
       variables: {
         name: name.value,
-        price: price.value,
+        price: price.value - 0,
         branchId: select.value
       }
     });
