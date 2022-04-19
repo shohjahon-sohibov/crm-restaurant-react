@@ -3,7 +3,6 @@ import { ALL_ORDERS } from "../../Query";
 
 const Order = () => {
   const { data } = useQuery(ALL_ORDERS);
-  console.log(data);
 
   return (
     <>

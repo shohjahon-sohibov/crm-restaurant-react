@@ -12,6 +12,7 @@ const Menu = () => {
     e.preventDefault();
 
     const { select, name, price } = e.target.elements;
+    console.log(select.value, name.value, price.value);
     newMenu({
       variables: {
         name: name.value,

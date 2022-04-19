@@ -8,7 +8,6 @@ const Branch = () => {
       console.log(data);
     },
   });
-  console.log(data);
 
   const handleSubmit = (e) => {
     e.preventDefault();
